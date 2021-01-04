@@ -1,2 +1,3 @@
-# free-code-camp-projects
-:muscle: My solutions to freeCodeCamp projects.
+# freeCodeCamp Projects
+
+Currently, focusing on topics concerning front-end development from the [Curriculum](https://www.freecodecamp.org/learn).
