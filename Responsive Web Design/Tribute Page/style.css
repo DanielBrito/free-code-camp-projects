@@ -1,0 +1,160 @@
+@media (max-width: 700px) {
+  #movie-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Palanquin Dark", sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/268067.jpg");
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  min-width: 300px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: chartreuse;
+  letter-spacing: 2px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.7);
+}
+
+a {
+  text-decoration: underline;
+  color: chartreuse;
+}
+
+ul {
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  height: 35px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  text-transform: uppercase;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 0 20px 20px 20px;
+}
+
+#image {
+  border-radius: 0 0 10px 10px;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+#tribute-info {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+}
+
+#timeline-title,
+#movie-title {
+  text-align: center;
+}
+
+#plot-text,
+#plot-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#timeline-events-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+#dotted-line {
+  color: chartreuse;
+  display: flex;
+  flex-direction: column;
+  line-height: 10px;
+}
+
+#year {
+  color: chartreuse;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#movie-info {
+  display: flex;
+}
+
+#poster-div {
+  display: flex;
+  flex-direction: column;
+}
+
+#figure {
+  text-align: center;
+}
+
+#imdb-rate {
+  text-align: center;
+}
+
+#plot-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#heart-icon {
+  color: chartreuse;
+  margin: 0 3px 0 3px;
+}
+
+#star-icon {
+  color: yellow;
+}
