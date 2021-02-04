@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+/* Required => media-query */
+@media (max-width: 880px) {
+  .nav-label {
+    display: none;
+  }
+
+  #book-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Required => display: flex */
+#menu {
+  display: flex;
+}
+
+#header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px #000;
+  position: fixed;
+}
+
+#header-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-img {
+  height: 45px;
+  width: auto;
+  float: left;
+  margin-left: 50px;
+}
+
+#logo-title {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: "Gochi Hand", cursive;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+#nav-bar {
+  margin-right: 20px;
+}
+
+#menu {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+}
+
+.nav-label {
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#nav-link-icon {
+  font-size: 20px;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background: url("https://3.bp.blogspot.com/-UktUyIT84T8/V2p7ieQxaCI/AAAAAAAAIc4/ui4wtitg9-MMztgTvKMMBhE7V8BXIexSwCK4B/s1600/A%2BLER%2BVAZIOS%2B%2528perfil%2529.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#book-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+#book-cover {
+  height: auto;
+  width: 100%;
+  border: #000;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#description-column {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+#book-title {
+  font-family: "Gochi Hand", cursive;
+  font-size: 4rem;
+  margin: 0;
+}
+
+#book-description {
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+}
+
+#video-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 600px;
+  width: 100%;
+  background-color: #000;
+}
+
+#video-title {
+  margin: 0;
+  color: #fff;
+  font-family: "Gochi Hand", cursive;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#video {
+  height: 450px;
+  width: 100%;
+  max-width: 800px;
+}
+
+#order-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: calc(700px - 60px);
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#order-title {
+  color: #000;
+  font-family: "Gochi Hand", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+#email-label {
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#email {
+  height: 35px;
+  border-radius: 5px;
+  margin-left: 15px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+}
+
+#submit {
+  height: 50px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-color: #000;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
