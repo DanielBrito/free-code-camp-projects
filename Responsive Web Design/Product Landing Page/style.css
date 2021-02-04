@@ -21,6 +21,17 @@ body {
   padding: 0;
 }
 
+footer {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
 /* Required => display: flex */
 #menu {
   display: flex;
@@ -227,4 +238,9 @@ body {
 #submit:hover {
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
+}
+
+#heart {
+  margin: 0 4px;
+  color: #f33;
 }
