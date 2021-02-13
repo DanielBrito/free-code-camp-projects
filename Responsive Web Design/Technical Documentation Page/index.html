@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Technical Documentation Page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header id="nav-header">
+      <img id="cpp-logo" src="https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png" alt="C++ Logo" />
+      <span id="header-description">for Competitions</span>
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#INTRODUCTION"><span class="arrow-topic">&#187; </span>INTRODUCTION</a></li>
+      <li><a class="nav-link" href="#PROGRAMMING_TECHNIQUES"><span class="arrow-topic">&#187; </span>PROGRAMMING
+          TECHNIQUES</a></li>
+      <li><a class="nav-link" href="#EFFICIENCY"><span class="arrow-topic">&#187; </span>EFFICIENCY</a></li>
+      <li><a class="nav-link" href="#SORTING_AND_SEARCHING"><span class="arrow-topic">&#187; </span>SORTING AND
+          SEARCHING</a></li>
+      <li><a class="nav-link" href="#DATA_STRUCTURES"><span class="arrow-topic">&#187; </span>DATA STRUCTURES</a></li>
+      <li><a class="nav-link" href="#DYNAMIC_PROGRAMMING"><span class="arrow-topic">&#187; </span>DYNAMIC
+          PROGRAMMING</a></li>
+      <li><a class="nav-link" href="#GRAPHS"><span class="arrow-topic">&#187; </span>GRAPHS</a></li>
+      <li><a class="nav-link" href="#ALGORITHM_DESIGN"><span class="arrow-topic">&#187; </span>ALGORITHM DESIGN</a></li>
+      <li><a class="nav-link" href="#RANGE_QUERIES"><span class="arrow-topic">&#187; </span>RANGE QUERIES</a></li>
+      <li><a class="nav-link" href="#TREE_ALGORITHMS"><span class="arrow-topic">&#187; </span>TREE ALGORITHMS</a></li>
+      <li><a class="nav-link" href="#MATHEMATICS"><span class="arrow-topic">&#187; </span>MATHEMATICS</a></li>
+      <li><a class="nav-link" href="#ADVANCED_GRAPHS_ALGORITHMS"><span class="arrow-topic">&#187; </span>ADVANCED GRAPHS
+          ALGORITHMS</a></li>
+      <li><a class="nav-link" href="#GEOMETRY"><span class="arrow-topic">&#187; </span>GEOMETRY</a></li>
+      <li><a class="nav-link" href="#STRING_ALGORITHMS"><span class="arrow-topic">&#187; </span>STRING ALGORITHMS</a>
+      </li>
+      <li><a class="nav-link" href="#ADDITIONAL_TOPICS"><span class="arrow-topic">&#187; </span>ADDITIONAL TOPICS</a>
+      </li>
+      <li><a class="nav-link" href="#REFERENCE"><span class="arrow-topic">&#187; </span>REFERENCE</a></li>
+      <li><a class="nav-link" href="#APPENDIX"><span class="arrow-topic">&#187; </span>APPENDIX</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="INTRODUCTION">
+      <header>INTRODUCTION</header>
+      <p>
+        Competitive programming combines two topics: the design of algorithms and the implementation of
+        algorithms.<br /><br />
+
+        <strong><em>Design of Algorithms</em></strong> The core of competitive programming is about inventing efficient
+        algorithms that solve
+        well-defined computational problems. The design of algorithms requires problem solving and mathematical
+        skills.
+        Often a solution to a problem is a combination of well-known methods and new insights. <br /><br />
+
+        Mathematics plays an important role in competitive programming. Actually, there are no clear boundaries
+        between
+        algorithm design and mathematics. This book has been written so that not much background in mathematics is
+        needed.
+      </p>
+    </section>
+    <section class="main-section" id="PROGRAMMING_TECHNIQUES">
+      <header>PROGRAMMING TECHNIQUES</header>
+      <p>This chapter presents some of the features of the C++ programming language that are useful in competitive
+        programming, and gives examples of how to use recursion and bit operations in programming.</p>
+
+      <p>A typical C++ code template for competitive programming looks like this:</p>
+      <div class="code-wrapper">
+        <code class="code-example">
+          #include <bits/stdc++.h> <br/>
+          using namespace std; <br/>
+          int main() { <br/>
+            // solution comes here <br/>
+          }
+        </code>
+      </div>
+
+      <p>The code can be compiled using the following command:</p>
+      <div class="code-wrapper">
+        <code>
+          g++ -std=c++11 -O2 -Wall test.cpp -o test
+        </code>
+      </div>
+
+      <p>The input for the program usually consists of numbers and strings separated with spaces and newlines. They
+        can
+        be read from the cin stream as follows:
+      </p>
+      <div class="code-wrapper">
+        <code>
+          int a, b; <br/>
+          string x; <br/>
+          cin &#62;&#62; a &#62;&#62; b &#62;&#62; x;
+        </code>
+      </div>
+
+      <p>The cout stream is used for output as follows:</p>
+      <div class="code-wrapper">
+        <code>
+          int a = 123, b = 456; <br/>
+          string x = "monkey"; <br/>
+          cout &#60;&#60; a &#60;&#60; " " &#60;&#60; b &#60;&#60; " " &#60;&#60; x &#60;&#60; "\n"; <br/>
+        </code>
+      </div>
+
+      <p>
+        Input and output is sometimes a bottleneck in the program. The following lines at the beginning of the code
+        make
+        input and output more efficient:
+      </p>
+      <div class="code-wrapper">
+        <code>
+          ios::sync_with_stdio(0); <br/>
+          cin.tie(0); <br/>
+        </code>
+      </div>
+    </section>
+    <section class="main-section" id="EFFICIENCY">
+      <header>EFFICIENCY</header>
+      <p>The efficiency of algorithms plays a central role in competitive programming. In this chapter, we learn tools
+        that make it easier to design efficient algorithms.</p>
+    </section>
+    <section class="main-section" id="SORTING_AND_SEARCHING">
+      <header>SORTING AND SEARCHING</header>
+      <p>Many efficient algorithms are based on sorting the input data, because sorting often makes solving the
+        problem
+        easier. This chapter discusses the theory and practice of sorting as an algorithm design tool.</p>
+      <lu>
+        <li>Sorting Algorithms</li>
+        <li>Binary Search</li>
+      </lu>
+    </section>
+    <section class="main-section" id="DATA_STRUCTURES">
+      <header>DATA STRUCTURES</header>
+      <p>This chapter introduces the most important data structures of the C++ standard library. In competitive
+        programming, it is crucial to know which data structures are available in the standard library and how to use
+        them. This often saves a large amount of time when implementing an algorithm.</p>
+      <lu>
+        <li>Dynamic Arrays</li>
+        <li>Vectors</li>
+        <li>Sets</li>
+        <li>Maps</li>
+        <li>Priority Queues</li>
+      </lu>
+    </section>
+    <section class="main-section" id="DYNAMIC_PROGRAMMING">
+      <header>DYNAMIC PROGRAMMING</header>
+      <p>Dynamic programming is an algorithm design technique that can be used to find optimal solutions to problems
+        and
+        to count the number of solutions. This chapter is an introduction to dynamic programming, and the technique
+        will
+        be used many times later in the book when designing algorithms.</p>
+    </section>
+    <section class="main-section" id="GRAPHS">
+      <header>GRAPHS</header>
+      <p>Many programming problems can be solved by considering the situation as a graph and using an appropriate
+        graph
+        algorithm. In this chapter, we will learn the basics of graphs and a selection of important graph algorithms.
+      </p>
+      <lu>
+        <li>Graph Traversal</li>
+        <li>Shortest Paths</li>
+        <li>Directed Acyclic Graphs</li>
+        <li>Successor Graphs</li>
+        <li>Minimum Spanning Trees</li>
+      </lu>
+    </section>
+    <section class="main-section" id="ALGORITHM_DESIGN">
+      <header>ALGORITHM DESIGN</header>
+      <p>This chapter discusses a selection of algorithm design topics.</p>
+      <lu>
+        <li>Bit-Parallel Algorithms</li>
+        <li>Amortized Analysis</li>
+        <li>Finding Minimum Values</li>
+      </lu>
+    </section>
+    <section class="main-section" id="RANGE_QUERIES">
+      <header>RANGE QUERIES</header>
+      <p>In this chapter, we discuss data structures for efficiently processing range queries on arrays. Typical
+        queries
+        are range sum queries (calculating the sum of values) and range minimum queries (finding the minimum value).
+      </p>
+    </section>
+    <section class="main-section" id="TREE_ALGORITHMS">
+      <header>TREE ALGORITHMS</header>
+      <p>The special properties of trees allow us to create algorithms that are specialized for trees and work more
+        efficiently than general graph algorithms. This chapter presents a selection of such algorithms.</p>
+    </section>
+    <section class="main-section" id="MATHEMATICS">
+      <header>MATHEMATICS</header>
+      <p>This chapter deals with mathematical topics that are recurrent in competitive programming. We will both
+        discuss
+        theoretical results and learn how to use them in practice in algorithms.</p>
+      <lu>
+        <li>Number Theory</li>
+        <li>Combinatorics</li>
+        <li>Matrices</li>
+        <li>Probability</li>
+        <li>Game Theory</li>
+      </lu>
+    </section>
+    <section class="main-section" id="ADVANCED_GRAPHS_ALGORITHMS">
+      <header>ADVANCED GRAPHS ALGORITHMS</header>
+      <p>This chapter discusses a selection of advanced graph algorithms.</p>
+      <li>
+      <li>Strong Connectivity</li>
+      <li>Complete Paths</li>
+      <li>Maximum Flows</li>
+      <li>Depth-First Search Trees</li>
+      </li>
+    </section>
+    <section class="main-section" id="GEOMETRY">
+      <header>GEOMETRY</header>
+      <p>This chapter discusses algorithm techniques related to geometry. The general goal of the chapter is to find
+        ways to conveniently solve geometric problems, avoiding special cases and tricky implementations.</p>
+    </section>
+    <section class="main-section" id="STRING_ALGORITHMS">
+      <header>STRING ALGORITHMS</header>
+      <p>This chapter deals with topics related to string processing.</p>
+      <lu>
+        <li>Hashing</li>
+        <li>Z-Algorithm</li>
+        <li>Suffix Arrays</li>
+      </lu>
+    </section>
+    <section class="main-section" id="ADDITIONAL_TOPICS">
+      <header>ADDITIONAL TOPICS</header>
+      <p>This final chapter presents a selection of advanced algorithms and data structures. Mastering the techniques
+        of
+        this chapter may sometimes help you to solve the most difficult problem in a programming contest.</p>
+      <lu>
+        <li>Square Root Techniques</li>
+        <li>Treaps</li>
+        <li>Dynamic Programming Optimization</li>
+      </lu>
+    </section>
+    <section class="main-section" id="REFERENCE">
+      <header>REFERENCE</header>
+      <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-319-72547-5.pdf" target="_blank"
+        title="Read book">Guide To Competitive Programming (Antii Laaksonen)</a>
+    </section>
+    <section class="main-section" id="APPENDIX">
+      <header>APPENDIX</header>
+      <a href="https://github.com/DanielBrito/competitive-programming" target="_blank"
+        title="Access repository">(Personal) Resources on
+        Competitive Programming</a>
+    </section>
+    <footer>Developed with <span id="heart">&#10084;</span> by Daniel Brito</footer>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
