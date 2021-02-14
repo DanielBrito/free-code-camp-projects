@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+/* Required => media-query */
+@media (max-width: 880px) {
+  .nav-label {
+    display: none;
+  }
+
+  #projects-wrapper {
+    flex-direction: column;
+  }
+
+  #halugar {
+    margin-bottom: 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#menu {
+  display: flex;
+}
+
+#header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px #000;
+  position: fixed;
+}
+
+#header-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-img {
+  height: 45px;
+  width: auto;
+  float: left;
+  margin-left: 30px;
+}
+
+#navbar {
+  margin-right: 10px;
+}
+
+#menu {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #9e0b0f;
+  margin: 0 20px 0 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+  font-size: 15px;
+  font-style: normal !important;
+}
+
+.nav-label {
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #9e0b0f;
+  border-radius: 10px;
+}
+
+#nav-link-icon {
+  font-size: 20px;
+}
+
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(-180deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.9)),
+    url("https://i.imgur.com/Zn4bveE.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#welcome-title {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 30px #9e0b0f;
+  font-family: "Gochi Hand", cursive;
+  font-size: 4rem;
+  letter-spacing: 7px;
+  user-select: none;
+  margin: 70px 0 10px 0;
+  text-align: center;
+}
+
+#work {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 20px #9e0b0f;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-wrapper {
+  margin: 0 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.2);
+}
+
+#about {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  background-color: #000;
+  padding-top: 10px;
+  color: #fff;
+}
+
+#about-text-wrapper {
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 20px;
+}
+
+#about-title {
+  font-family: "Gochi Hand", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin: 5px 0;
+  text-shadow: 0 0 15px #9e0b0f;
+}
+
+#about-text p {
+  text-align: center !important;
+  line-height: 30px;
+}
+
+#projects {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+#projects-title {
+  font-family: "Gochi Hand", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin: 5px 0 30px 0;
+  text-shadow: 0 0 15px #9e0b0f;
+}
+
+.project-tile {
+  max-width: 350px;
+  padding: 15px;
+  background: #000;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #9e0b0f;
+  border-radius: 10px;
+  margin: 0 20px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile:hover {
+  box-shadow: 0 0 5px #9e0b0f;
+}
+
+.project-tile p {
+  text-align: center;
+  padding: 0 5px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border: #9e0b0f;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#projects-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.project-link {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #9e0b0f;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-style: normal !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-link:hover {
+  background-color: #bb0a10;
+}
+
+#contact {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  background-color: #000;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-title {
+  font-family: "Gochi Hand", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  margin: 5px 0 30px 0;
+  text-shadow: 0 0 15px #9e0b0f;
+}
+
+#social-networks {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-link {
+  font-size: 20px;
+  font-weight: normal !important;
+}
+
+.profile-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #9e0b0f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 5px;
+}
+
+.profile-wrapper:hover {
+  box-shadow: 0 0 5px #9e0b0f;
+  cursor: pointer;
+}
+
+#heart {
+  margin: 0 4px;
+  color: #9e0b0f;
+}
